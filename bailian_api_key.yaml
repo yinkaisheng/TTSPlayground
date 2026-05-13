@@ -1,0 +1,7 @@
+# 百炼 / DashScope API Key。请勿将真实 Key 提交到公开仓库。
+# GUI 中以下拉框展示；列表文字仅显示 Key 前 16 位 + ...，选择项携带完整 Key。
+keys:
+  - key_name: default
+    bailian_api_key: sk-xxxxxxxx
+  - key_name: myapp
+    bailian_api_key: sk-xxxxxxxx

@@ -1,0 +1,43 @@
+# Edge TTS（Microsoft Edge 在线朗读，依赖 pip 包 edge-tts）
+info: 使用微软 Edge 浏览器同源在线语音合成；需本机可访问相关网络服务。音色列表可在界面点击「刷新音色列表」从服务端拉取。
+help_url: https://github.com/rany2/edge-tts
+
+default_voice: zh-CN-XiaoyiNeural
+default_rate: "+0%"
+default_output_filename: edge_tts.mp3  # GUI 仅允许 .mp3，请勿改为 .wav
+
+# 语速/音量/音调的物理范围与步进（传给 edge-tts 的字符串须落在此网格上；界面不提供编辑，仅改 YAML）
+rate_min: -50
+rate_max: 50
+rate_step: 5
+volume_min: -100
+volume_max: 100
+volume_step: 5
+pitch_min: -100
+pitch_max: 100
+pitch_step: 5
+
+# 启动时下拉框预置音色（ShortName）；完整列表请使用界面「刷新音色列表」
+voices:
+  - zh-CN-XiaoyiNeural
+  - zh-CN-XiaoxiaoNeural
+  - zh-CN-YunxiNeural
+  - zh-CN-YunyangNeural
+  - zh-CN-XiaochenNeural
+  - zh-CN-XiaohanNeural
+  - zh-CN-XiaomengNeural
+  - zh-CN-XiaomoNeural
+  - zh-CN-XiaoqiuNeural
+  - zh-CN-XiaoruiNeural
+  - zh-CN-XiaoshuangNeural
+  - zh-CN-XiaoxuanNeural
+  - zh-CN-XiaoyanNeural
+  - zh-CN-XiaozhenNeural
+  - zh-CN-YunfengNeural
+  - zh-CN-YunhaoNeural
+  - zh-CN-YunjianNeural
+  - zh-CN-YunxiaNeural
+  - zh-CN-YunyeNeural
+  - zh-CN-YunzeNeural
+  - en-US-JennyNeural
+  - en-US-GuyNeural

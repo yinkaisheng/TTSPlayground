@@ -1,0 +1,1426 @@
+# Qwen3 TTS Realtime（WebSocket）界面默认值；修改后重启 GUI 生效。
+realtime_base_url: wss://dashscope.aliyuncs.com/api-ws/v1/realtime
+info: 中国内地：1元/万字符
+model_usage: https://bailian.console.aliyun.com/cn-beijing/?tab=model#/model-usage?modelType=Audio
+
+models:
+  - model_id: qwen3-tts-instruct-flash-realtime
+    note: 支持指令风格控制，免费10000字符，过期时间 2026/08/05
+    voices:
+      - Cherry
+      - Serena
+      - Ethan
+      - Chelsie
+      - Momo
+      - Vivian
+      - Moon
+      - Maia
+      - Kai
+      - Nofish
+      - Bella
+      - "Eldric Sage"
+      - Mia
+      - Mochi
+      - Bellona
+      - Vincent
+      - Bunny
+      - Neil
+      - Elias
+      - Arthur
+      - Nini
+      - Seren
+      - Pip
+      - Stella
+  - model_id: qwen3-tts-instruct-flash-realtime-2026-01-22
+    note: 支持指令风格控制，免费10000字符，过期时间 2026/08/05
+    voices:
+      - Cherry
+      - Serena
+      - Ethan
+      - Chelsie
+      - Momo
+      - Vivian
+      - Moon
+      - Maia
+      - Kai
+      - Nofish
+      - Bella
+      - "Eldric Sage"
+      - Mia
+      - Mochi
+      - Bellona
+      - Vincent
+      - Bunny
+      - Neil
+      - Elias
+      - Arthur
+      - Nini
+      - Seren
+      - Pip
+      - Stella
+  - model_id: qwen3-tts-flash-realtime
+    note: 无免费额度
+    voices:
+      - Cherry
+      - Serena
+      - Ethan
+      - Chelsie
+      - Momo
+      - Vivian
+      - Moon
+      - Maia
+      - Kai
+      - Nofish
+      - Bella
+      - Jennifer
+      - Ryan
+      - Katerina
+      - Aiden
+      - "Eldric Sage"
+      - Mia
+      - Mochi
+      - Bellona
+      - Vincent
+      - Bunny
+      - Neil
+      - Elias
+      - Arthur
+      - Nini
+      - Seren
+      - Pip
+      - Stella
+      - Bodega
+      - Sonrisa
+      - Alek
+      - Dolce
+      - Sohee
+      - "Ono Anna"
+      - Lenn
+      - Emilien
+      - Andre
+      - "Radio Gol"
+      - Jada
+      - Dylan
+      - Li
+      - Marcus
+      - Roy
+      - Peter
+      - Sunny
+      - Eric
+      - Rocky
+      - Kiki
+  - model_id: qwen3-tts-flash-realtime-2025-11-27
+    note: 无免费额度
+    voices:
+      - Cherry
+      - Serena
+      - Ethan
+      - Chelsie
+      - Momo
+      - Vivian
+      - Moon
+      - Maia
+      - Kai
+      - Nofish
+      - Bella
+      - Jennifer
+      - Ryan
+      - Katerina
+      - Aiden
+      - "Eldric Sage"
+      - Mia
+      - Mochi
+      - Bellona
+      - Vincent
+      - Bunny
+      - Neil
+      - Elias
+      - Arthur
+      - Nini
+      - Seren
+      - Pip
+      - Stella
+      - Bodega
+      - Sonrisa
+      - Alek
+      - Dolce
+      - Sohee
+      - "Ono Anna"
+      - Lenn
+      - Emilien
+      - Andre
+      - "Radio Gol"
+      - Jada
+      - Dylan
+      - Li
+      - Marcus
+      - Roy
+      - Peter
+      - Sunny
+      - Eric
+      - Rocky
+      - Kiki
+
+session_modes:
+  - id: commit
+    label: commit（客户端提交缓冲区）
+  - id: server_commit
+    label: server_commit
+
+sample_rates:
+  - 8000
+  - 16000
+  - 24000
+  - 48000
+
+default_output_filename: qwen3_tts.wav
+
+voices:
+  - voice_id: Cherry
+    name: 芊悦
+    style: 阳光积极、亲切自然小姐姐（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Serena
+    name: 苏瑶
+    style: 温柔小姐姐（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Ethan
+    name: 晨煦
+    style: 标准普通话，带部分北方口音。阳光、温暖、活力、朝气（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Chelsie
+    name: 千雪
+    style: 二次元虚拟女友（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Momo
+    name: 茉兔
+    style: 撒娇搞怪，逗你开心（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Vivian
+    name: 十三
+    style: 拽拽的、可爱的小暴躁（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Moon
+    name: 月白
+    style: 率性帅气的月白（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Maia
+    name: 四月
+    style: 知性与温柔的碰撞（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Kai
+    name: 凯
+    style: 耳朵的一场SPA（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Nofish
+    name: 不吃鱼
+    style: 不会翘舌音的设计师（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Bella
+    name: 萌宝
+    style: 喝酒不打醉拳的小萝莉（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Jennifer
+    name: 詹妮弗
+    style: 品牌级、电影质感般美语女声（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Ryan
+    name: 甜茶
+    style: 节奏拉满，戏感炸裂，真实与张力共舞（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Katerina
+    name: 卡捷琳娜
+    style: 御姐音色，韵律回味十足（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Aiden
+    name: 艾登
+    style: 精通厨艺的美语大男孩（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Eldric Sage
+    name: 沧明子
+    style: 沉稳睿智的老者，沧桑如松却心明如镜（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Mia
+    name: 乖小妹
+    style: 温顺如春水，乖巧如初雪（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Mochi
+    name: 沙小弥
+    style: 聪明伶俐的小大人，童真未泯却早慧如禅（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Bellona
+    name: 燕铮莺
+    style: 声音洪亮，吐字清晰，人物鲜活，听得人热血沸腾；金戈铁马入梦来，字正腔圆间尽显千面人声的江湖（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Vincent
+    name: 田叔
+    style: 一口独特的沙哑烟嗓，一开口便道尽了千军万马与江湖豪情（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Bunny
+    name: 萌小姬
+    style: 「萌属性」爆棚的小萝莉（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Neil
+    name: 阿闻
+    style: 平直的基线语调，字正腔圆的咬字发音，这就是最专业的新闻主持人（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Elias
+    name: 墨讲师
+    style: 既保持学科严谨性，又通过叙事技巧将复杂知识转化为可消化的认知模块（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Arthur
+    name: 徐大爷
+    style: 被岁月和旱烟浸泡过的质朴嗓音，不疾不徐地摇开了满村的奇闻异事（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Nini
+    name: 邻家妹妹
+    style: 糯米糍一样又软又黏的嗓音，那一声声拉长了的「哥哥」，甜得能把人的骨头都叫酥了（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Seren
+    name: 小婉
+    style: 温和舒缓的声线，助你更快地进入睡眠，晚安，好梦（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Pip
+    name: 顽屁小孩
+    style: 调皮捣蛋却充满童真的他来了，这是你记忆中的小新吗（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Stella
+    name: 少女阿月
+    style: 平时是甜到发腻的迷糊少女音，但在喊出「代表月亮消灭你」时，瞬间充满不容置疑的爱与正义（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Bodega
+    name: 博德加
+    style: 热情的西班牙大叔（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Sonrisa
+    name: 索尼莎
+    style: 热情开朗的拉美大姐（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Alek
+    name: 阿列克
+    style: 一开口，是战斗民族的冷，也是毛呢大衣下的暖（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Dolce
+    name: 多尔切
+    style: 慵懒的意大利大叔（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Sohee
+    name: 素熙
+    style: 温柔开朗，情绪丰富的韩国欧尼（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Ono Anna
+    name: 小野杏
+    style: 鬼灵精怪的青梅竹马（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Lenn
+    name: 莱恩
+    style: 理性是底色，叛逆藏在细节里——穿西装也听后朋克的德国青年（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Emilien
+    name: 埃米尔安
+    style: 浪漫的法国大哥哥（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Andre
+    name: 安德雷
+    style: 声音磁性，自然舒服、沉稳男生（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Radio Gol
+    name: 拉迪奥·戈尔
+    style: 足球诗人Rádio Gol！今天我要用名字为你们解说足球（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（普通话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Jada
+    name: 上海-阿珍
+    style: 风风火火的沪上阿姐（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（上海话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Dylan
+    name: 北京-晓东
+    style: 北京胡同里长大的少年（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（北京话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Li
+    name: 南京-老李
+    style: 耐心的瑜伽老师（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（南京话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Marcus
+    name: 陕西-秦川
+    style: 面宽话短，心实声沉——老陕的味道（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（陕西话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Roy
+    name: 闽南-阿杰
+    style: 诙谐直爽、市井活泼的台湾哥仔形象（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（闽南语）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Peter
+    name: 天津-李彼得
+    style: 天津相声，专业捧哏（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（天津话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Sunny
+    name: 四川-晴儿
+    style: 甜到你心里的川妹子（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（四川话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Eric
+    name: 四川-程川
+    style: 一个跳脱市井的四川成都男子（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（四川话）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Rocky
+    name: 粤语-阿强
+    style: 幽默风趣的阿强，在线陪聊（男性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（粤语）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语
+  - voice_id: Kiki
+    name: 粤语-阿清
+    style: 甜美的港妹闺蜜（女性）
+    voice_languages:
+    - code: Auto
+      label: Auto
+    - code: Chinese
+      label: 中文（粤语）
+    - code: English
+      label: 英文
+    - code: German
+      label: 德语
+    - code: French
+      label: 法语
+    - code: Italian
+      label: 意大利语
+    - code: Portuguese
+      label: 葡萄牙语
+    - code: Spanish
+      label: 西班牙语
+    - code: Japanese
+      label: 日语
+    - code: Korean
+      label: 韩语
+    - code: Russian
+      label: 俄语

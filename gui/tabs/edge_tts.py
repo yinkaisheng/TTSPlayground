@@ -122,6 +122,7 @@ class EdgeTtsTab(QWidget):
         self._synth_worker: EdgeSynthesisWorker | None = None
         self._voice_worker: EdgeVoiceListWorker | None = None
         self._last_output: Path | None = None
+        self._pending_output_path: Path | None = None
         self._play_cycle_pending = False
         self._seek_display_pos_ms: int | None = None
         self._audio_duration_sec = 0.0
@@ -339,6 +340,8 @@ class EdgeTtsTab(QWidget):
     def _bootstrap_existing_audio_file(self) -> None:
         path = self._current_output_path()
         if not path.is_file():
+            return
+        if path.stat().st_size == 0:
             return
         ext = path.suffix.lower()
         if ext != ".mp3":
@@ -802,6 +805,7 @@ class EdgeTtsTab(QWidget):
         self._waveform_gen += 1
         self._player.stop()
         self._player.unload()
+        self._pending_output_path = out
         self.status_label.setText("正在合成（Edge TTS）…")
         self._ws_log_append_line(format_log_line("—— 开始合成（Edge TTS）——"))
 
@@ -813,6 +817,7 @@ class EdgeTtsTab(QWidget):
 
     def _on_synth_ok(self, path_str: str) -> None:
         self.synth_btn.setEnabled(True)
+        self._pending_output_path = None
         self._last_output = Path(path_str)
         self.status_label.setText(f"完成：{path_str}")
         ext = self._last_output.suffix.lower()
@@ -828,6 +833,14 @@ class EdgeTtsTab(QWidget):
 
     def _on_synth_fail(self, msg: str) -> None:
         self.synth_btn.setEnabled(True)
+        pending = self._pending_output_path
+        self._pending_output_path = None
+        if pending is not None and pending.is_file() and pending.stat().st_size == 0:
+            try:
+                pending.unlink()
+                self._ws_log_append_line(format_log_line(f"合成失败，已删除无效文件: {pending.name}"))
+            except OSError:
+                pass
         if self._last_output and self._last_output.is_file():
             ext = self._last_output.suffix.lower()
             self.play_btn.setEnabled(ext == ".mp3")

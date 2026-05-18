@@ -21,6 +21,7 @@ def get_dpi_scale() -> float:
 
 
 ROOT = Path(__file__).resolve().parent.parent
+TTS_WINDOW_ICON_PNG = ROOT / "tts.png"
 SAMBERT_YAML = ROOT / "sambert_tts.yaml"
 QWEN3_YAML = ROOT / "qwen3_tts.yaml"
 EDGE_TTS_YAML = ROOT / "edge_tts.yaml"
@@ -54,6 +55,9 @@ UI_BG_PANEL = f"#{UI_BG_PANEL_HEX:06x}"
 UI_TAB_BG_INACTIVE = "#e3edf9"
 UI_TAB_BG_ACTIVE = "#c4d9f0"
 UI_WINDOW_BG = "#f0f7ff"
+
+# 波形：`True` 为实心分箱填充（相邻条首尾相接），避免竖线模式下条宽与采样桶数不齐时的留白参差感。
+WAVEFORM_SOLID_FILL = True
 
 # GtArrowComboBox / GlyphSpinBox 自绘三角：固定像素，不随全局字号与控件高度缩放
 UI_ARROW_GLYPH_BASE_PX = 8

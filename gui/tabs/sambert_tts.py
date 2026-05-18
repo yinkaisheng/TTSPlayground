@@ -36,7 +36,7 @@ from gui.constants import (
 from gui.format_log import format_log_line
 from gui.miniaudio_player import MiniAudioPlayer
 import gui.play_time_format as ptf
-from gui.waveform import WaveformLoadThread, WaveformWidget
+from gui.waveform import WaveformLoadThread, WaveformWidget, waveform_target_bars_for_widget
 from gui.widgets import GtArrowComboBox, SingleLineElidingInfoLabel
 from sambert_tts_ws import synthesize_sambert_tts
 from wav_repair import repair_wav_chunk_sizes
@@ -610,7 +610,9 @@ class SambertTtsTab(QWidget):
         gen = self._waveform_gen
         self.waveform_canvas.clear()
         self._audio_duration_sec = 0.0
-        thr = WaveformLoadThread(path.resolve())
+        bars = waveform_target_bars_for_widget(self.waveform_canvas)
+        print(f"sambert bars: {bars}")
+        thr = WaveformLoadThread(path.resolve(), target_bars=bars)
 
         def _on_done(peaks: list, dur_sec: float) -> None:
             if gen != self._waveform_gen:

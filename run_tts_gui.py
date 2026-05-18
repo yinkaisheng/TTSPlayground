@@ -24,6 +24,7 @@ from PyQt5.QtWidgets import (
 from gui.config import USER_SETTINGS_FILE_VERSION, load_user_settings_yaml, save_user_settings_yaml
 from gui.constants import (
     DEFAULT_UI_FONT_PT,
+    TTS_WINDOW_ICON_PNG,
     UI_FONT_PT_MAX,
     UI_FONT_PT_MIN,
     USER_SETTING_FONT_PT_FIELD,
@@ -77,6 +78,8 @@ class MainWindow(QMainWindow):
         super().__init__()
         self._restore_maximized = False
         self.setWindowTitle("TTS Playground")
+        if TTS_WINDOW_ICON_PNG.is_file():
+            self.setWindowIcon(QIcon(str(TTS_WINDOW_ICON_PNG)))
         self.resize(1400, 900)
         tabs = QTabWidget()
         edge_tab = EdgeTtsTab()
@@ -204,6 +207,8 @@ class MainWindow(QMainWindow):
 def main() -> None:
     app = QApplication(sys.argv)
     app.setStyle("Fusion")
+    if TTS_WINDOW_ICON_PNG.is_file():
+        app.setWindowIcon(QIcon(str(TTS_WINDOW_ICON_PNG)))
     initial_pt = read_saved_font_pt()
     apply_global_ui_font(app, initial_pt)
     win = MainWindow()
